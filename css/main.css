@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+/* Mobile */
+@media only screen and (max-width: 400px) {
+    html {
+        min-height: 100%;
+        position: relative;
+    }
+}
+  
+/* Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    html {
+        min-height: 100%;
+        position: relative;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 961px) {
+    html{
+        height: 100%;
+    }
+}
+
+body{
+    height: 100%; 
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.lora {
+    font-family: 'Lora', serif;
+}
+
+.introduction, .about-me {
+    height: 100%;
+}
+
+#pmbaAnim {
+    height: 50px;
+    width: 180px;
+}
+
+.bg-darker {
+    background: #151515;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: #ffd319;
+    letter-spacing: 2px;
+}
+
+.profile-picture-holder {
+    height: 250px;
+    width: 250px;
+}
+
+.profile-picture-holder img {
+    border-radius: 250px;
+    height: 100%;
+    width: 100%;
+}
+
+.my-name {
+    font-weight: 500;
+    color: #f1f1f1;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* letter-spacing: 2px; */
+}
+
+.description {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.social-medias i {
+    color: #f1f1f1;
+    font-size: 30px;
+}
+
+.social-medias i:hover {
+    color: #ffffff;
+}
+
+.about-me .about-text {
+    letter-spacing: .3rem;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    color: #335C67;
+}
+
+.about-me .about-info {
+    color: #313131;
+}
+
+.info-list dt {
+    color: #313131;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 3rem;
+}
+
+.info-list dd {
+    color: #888888;
+}
+
+.progress-bar {
+    
+}
