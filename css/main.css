@@ -57,6 +57,13 @@ body{
     text-transform: uppercase;
     color: #ffd319;
     letter-spacing: 2px;
+    transition: 0.2s all ease;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #face0a;
+    padding-bottom: 0.9rem;
 }
 
 .profile-picture-holder {
@@ -115,6 +122,29 @@ body{
     color: #888888;
 }
 
-.progress-bar {
-    
+.progress {
+    height: 10px !important;
+    border-radius: 0px !important;
 }
+
+.progress .languages {
+    background: #ff2975 !important;
+}
+
+.progress-count {
+    background: #ffd319;
+    width: 0%;
+}
+
+.progress-indicator {
+    opacity: 0;
+}
+
+a.unlink {
+    color: inherit;
+}
+a.unlink:hover {
+    color: inherit;
+    text-decoration: none;
+}
+

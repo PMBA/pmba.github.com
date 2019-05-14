@@ -12,12 +12,12 @@
 </head>
 <body>
 
-    <div class="introduction bg-darker">
+    <div class="introduction bg-darker" id="home">
 
-        <nav class="navbar navbar-dark bg-darker d-flex justify-content-center shadow-lg">
+        <nav id="navbar" class="navbar navbar-dark bg-darker d-flex justify-content-center shadow-lg">
             <a class="nav-link" href="#aboutMe">ABOUT ME</a>
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home" id="navbarBrandAnim">
                 <div id="pmbaAnim"></div>
             </a>
 
@@ -63,11 +63,12 @@
                 <div class="col-sm-12 text-center py-4">
                     <h5 class="poppins font-weight-bold about-text">ABOUT</h5>
                     <h4 class="poppins about-info">Let me show more about me.</h4>
+                    <hr>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-6 border">
+                <div class="col-md-6">
                     <dl class="info-list poppins">
                         <dt>PROFILE</dt>
                         <dd class="text-justify">
@@ -86,14 +87,64 @@
                             pmba@ic.ufal.br
                         </dd>
 
-                        <dt>WEBSITE</dt>
+                        <dt>GITHUB</dt>
                         <dd>
-                            pmba.github.io
+                            <a href="https:github.com/pmba" class="unlink"><i class="fas fa-link"></i> github.com/pmba</a>
+                        </dd>
+
+                        <dt>LANGUAGES</dt>
+                        
+                        <dt class="d-flex justify-content-between">
+                            PORTUGUESE
+                            <small class="text-muted progress-indicator">100%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count languages" id="progressBar" progress="100">
+
+                                </div>
+                            </div>
+                        </dd>
+                        
+                        <dt class="d-flex justify-content-between">
+                            ENGLISH
+                            <small class="text-muted progress-indicator">90%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count languages" id="progressBar" progress="90">
+
+                                </div>
+                            </div>
+                        </dd>
+                        
+                        <dt class="d-flex justify-content-between">
+                            FRENCH
+                            <small class="text-muted progress-indicator">55%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count languages" id="progressBar" progress="55">
+
+                                </div>
+                            </div>
+                        </dd>
+                        
+                        <dt class="d-flex justify-content-between">
+                            SPANISH
+                            <small class="text-muted progress-indicator">65%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count languages" id="progressBar" progress="65">
+
+                                </div>
+                            </div>
                         </dd>
                     </dl>
                 </div>
 
-                <div class="col-md-6 border">
+                <div class="col-md-6" id="skills">
                     <dl class="info-list poppins">
                         <dt>SKILLS</dt>
                         <dd class="text-justify">
@@ -102,10 +153,99 @@
                             and then you will see a list with some of my skills.
                         </dd>
 
-                        <dt>C</dt>
+                        <dt class="d-flex justify-content-between">
+                            C
+                            <small class="text-muted progress-indicator">90%</small>
+                        </dt>
                         <dd>
-                            <div class="progress-bar">
-                                
+                            <div class="progress">
+                                <div class="progress-count" id="progressBar" progress="90">
+                                    
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt class="d-flex justify-content-between">
+                            Java
+                            <small class="text-muted progress-indicator">70%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count" id="progressBar" progress="70">
+
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt class="d-flex justify-content-between">
+                            Python
+                            <small class="text-muted progress-indicator">60%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count" id="progressBar" progress="60">
+
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt class="d-flex justify-content-between">
+                            PHP
+                            <small class="text-muted progress-indicator">60%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count" id="progressBar" progress="60">
+
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt class="d-flex justify-content-between">
+                            Javascript
+                            <small class="text-muted progress-indicator">80%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count" id="progressBar" progress="80">
+                                    
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt class="d-flex justify-content-between">
+                            C++
+                            <small class="text-muted progress-indicator">65%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count" id="progressBar" progress="65">
+
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt class="d-flex justify-content-between">
+                            Adobe Illustrator
+                            <small class="text-muted progress-indicator">80%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count" id="progressBar" progress="80">
+
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt class="d-flex justify-content-between">
+                            Adobe After Effects
+                            <small class="text-muted progress-indicator">45%</small>
+                        </dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-count" id="progressBar" progress="45">
+
+                                </div>
                             </div>
                         </dd>
                     </dl>
