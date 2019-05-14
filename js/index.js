@@ -6,6 +6,10 @@ var animation = bodymovin.loadAnimation({
   path     : '../anim/pmba.json'
 });
 
+particlesJS.load('particles-js', './assets/particles.json', function() {
+  console.log('particles.js config loaded');
+});
+
 $('#navbarBrandAnim').mouseenter(() => {
   animation.setDirection(-1);
   animation.play(); 
