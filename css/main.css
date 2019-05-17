@@ -11,6 +11,10 @@
         min-height: 100%;
         position: relative;
     }
+
+    .mt-lg {
+        margin-top: 5rem;
+    }
 }
   
 /* Tablet */
@@ -19,12 +23,20 @@
         min-height: 100%;
         position: relative;
     }
+
+    .mt-lg {
+        margin-top: 5rem;
+    }
 }
 
 /* Desktop */
 @media only screen and (min-width: 961px) {
     html{
         height: 100%;
+    }
+
+    .mt-lg {
+        margin-top: 10rem;
     }
 }
 
@@ -154,6 +166,36 @@ a.unlink:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    
 }
 
+.pt-md {
+    padding: 5rem 0 0 0;
+}
+
+.py-md {
+    padding: 2rem 0 5rem 0;
+}
+
+.contact-text {
+    color: #888888;
+    letter-spacing: .3rem;
+    line-height: 1.875;
+}
+
+.contact-info {
+    color: #313131;
+}
+
+.contacts-holder i {
+    font-size: 3rem;
+}
+
+.btn-top {
+    height: 50px;
+    width: 50px;
+}
+
+.lh-top {
+    line-height: 35px;
+}
