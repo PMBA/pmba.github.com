@@ -11,6 +11,17 @@
         min-height: 100%;
         position: relative;
     }
+
+    .nav-link {
+        letter-spacing: 1px !important;
+        font-size: 12px;
+    }
+
+    #pmbaAnim {
+        height: 40px;
+        width: 70px;
+        padding-left: 1rem;
+    }
 }
   
 /* Tablet */
@@ -19,12 +30,32 @@
         min-height: 100%;
         position: relative;
     }
+
+    .nav-link {
+        letter-spacing: 1.5px !important;
+        font-size: 14px;
+    }
+
+    #pmbaAnim {
+        height: 50px;
+        width: 110px;
+    }
 }
 
 /* Desktop */
 @media only screen and (min-width: 961px) {
     html{
         height: 100%;
+    }
+
+    .nav-link {
+        letter-spacing: 2px !important;
+        font-size: 16px;
+    }
+
+    #pmbaAnim {
+        height: 50px;
+        width: 110px;
     }
 }
 
@@ -44,11 +75,6 @@ body{
     height: 100%;
 }
 
-#pmbaAnim {
-    height: 50px;
-    width: 180px;
-}
-
 .bg-darker {
     background: #151515;
 }
@@ -56,19 +82,17 @@ body{
 .nav-link {
     text-transform: uppercase;
     color: #ffd319;
-    letter-spacing: 2px;
     transition: 0.2s all ease;
 }
 
 .nav-link:hover {
     text-decoration: none;
     color: #face0a;
-    padding-bottom: 0.9rem;
 }
 
 .profile-picture-holder {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 }
 
 .profile-picture-holder img {
@@ -178,4 +202,20 @@ a.unlink:hover {
 
 .lh-top {
     line-height: 35px;
+}
+
+.lang-btn {
+    position: absolute;
+    right: 0 !important;
+    padding-right: 3rem;
+}
+
+.lang-btn:active, .lang-btn:focus {
+  outline: 0 !important;
+  border: none !important;
+  -moz-outline-style: none !important;
+}
+
+.lang-btn img {
+    height: 0.8rem;
 }

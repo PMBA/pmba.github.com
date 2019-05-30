@@ -7,7 +7,7 @@ var animation = bodymovin.loadAnimation({
 });
 
 particlesJS.load('particles-js', './assets/particles.json', function() {
-  console.log('particles.js config loaded');
+  // console.log('particles.js config loaded');
 });
 
 $('#navbarBrandAnim').mouseenter(() => {
@@ -19,11 +19,6 @@ $('#navbarBrandAnim').mouseleave(() => {
   animation.setDirection(1);
   animation.play(); 
 });
-
-// document.getElementById('pmbaAnim').addEventListener('mouseout', function() { 
-//   animation.setDirection(1);
-//   animation.play(); 
-// });
 
 $(window).on('scroll', () => {
   var scrollTop = $(this).scrollTop();
@@ -51,4 +46,8 @@ $(window).on('scroll', () => {
     visible = true;
   } 
 
+});
+
+$(document).ready(() => {
+  console.log('Nothing to see here...');
 });
