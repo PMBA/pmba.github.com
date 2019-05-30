@@ -207,7 +207,13 @@ a.unlink:hover {
 .lang-btn {
     position: absolute;
     right: 0 !important;
-    padding-right: 3rem;
+    margin-top: 10px;
+    margin-right: 10px;
+    line-height: 25px;
+    background: #313131;
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
 }
 
 .lang-btn:active, .lang-btn:focus {
