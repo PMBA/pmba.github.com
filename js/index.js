@@ -49,5 +49,6 @@ $(window).on('scroll', () => {
 });
 
 $(document).ready(() => {
+
   console.log('Nothing to see here...');
 });
