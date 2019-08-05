@@ -51,4 +51,30 @@ $(window).on('scroll', () => {
 $(document).ready(() => {
 
   console.log('Nothing to see here...');
+
+  if (window.matchMedia("(prefers-color-scheme: dark)")) {
+    applyIcon("dark");
+  }
+
+  window.matchMedia("(prefers-color-scheme: dark)").addListener(function(){
+    applyIcon("dark")
+  });
+
+  window.matchMedia("(prefers-color-scheme: light)").addListener(function(){
+    applyIcon("light");
+  });
 });
+
+function applyIcon (type) {
+  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+  link.type = 'image/x-icon';
+  link.rel = 'shortcut icon';
+
+  if (type === "dark") {
+      link.href = './image/favicon-w.ico';
+  } else {
+      link.href = './image/favicon-b.ico';
+  }
+
+  document.getElementsByTagName('head')[0].appendChild(link);
+}
